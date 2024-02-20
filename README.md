@@ -1,16 +1,9 @@
-# responsividade
+# Responsividade
 
-A new Flutter project.
+## Criei esse projeto para começar a compreender como funciona a responsividade dentro do flutter
 
-## Getting Started
+##Imagens dos projetos:
 
-This project is a starting point for a Flutter application.
+![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/e79e2729-93ca-4570-9317-7433bb34a62d)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/241c01c8-4f39-478d-be11-8d32bacd6011)
