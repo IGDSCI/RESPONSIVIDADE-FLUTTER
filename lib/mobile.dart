@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -23,7 +23,7 @@ class _MobileStfState extends State<MobileStf> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 65, 64, 64),
         title: Center(
           child: Text(
             'M O B I L E',
@@ -33,70 +33,179 @@ class _MobileStfState extends State<MobileStf> {
           ),
         ),
       ),
-      backgroundColor: const Color.fromARGB(255, 153, 121, 209),
-      body: Column(
-        children: [
-        Padding(
-          padding: const EdgeInsets.all(8),
-          child: AspectRatio(
-            aspectRatio: 16 / 9,
-            child: Container(
-              height: 250,
-              width: MediaQuery.of(context).size.width * 0.9,
-              color: const Color.fromARGB(255, 101, 56, 179),
+      backgroundColor: Color.fromARGB(255, 43, 42, 42),
+      drawer: SizedBox(
+        width: 250,
+        child: Drawer(
+          backgroundColor: Color.fromARGB(255, 53, 52, 52),
+          shape: BeveledRectangleBorder(),
+          child: Column(
+            children: [
+            Expanded(
+              child: ListView(children: [
+                Container(
+              height: 80,
+              decoration: BoxDecoration(gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [Colors.blue, Colors.pink])),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 8),
+                child: Row(children: [
+                  IconButton(
+                    onPressed: Navigator.of(context).pop, 
+                    icon: Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
+                      ),
+                  ),
+                  Text(
+                    'Olá Gustavo!',
+                    style: TextStyle(fontSize: 22, color: Colors.white),
+                    )
+                ]),
+              ),
             ),
-          ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.dashboard,
+                          color: Colors.white,
+                        ),
+              
+                        Text(
+                          'Dashboard',
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.shopping_cart,
+                          color: Colors.white,
+                        ),
+              
+                        Text(
+                          'Vendas',
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.shopping_basket,
+                          color: Colors.white,
+                        ),
+              
+                        Text(
+                          'Produtos',
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.settings,
+                          color: Colors.white,
+                        ),
+              
+                        Text(
+                          'Configurações',
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
+              
+                        Text(
+                          'Perfil',
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+              ],),
+            )
+            
+          ]),
         ),
-            
-        Expanded(
-          child: ListView(children: [
-            Padding(
-              padding: const EdgeInsets.all(8),
-              child: Container(
-                height: 130,
-                width: MediaQuery.of(context).size.width * 0.9,
-                color: Colors.deepPurple[400],
-              ),
-            ),
-            
-            Padding(
-              padding: const EdgeInsets.all(8),
-              child: Container(
-                height: 130,
-                width: MediaQuery.of(context).size.width * 0.9,
-                color: Colors.deepPurple[400],
-              ),
-            ),
-            
-            Padding(
-              padding: const EdgeInsets.all(8),
-              child: Container(
-                height: 130,
-                width: MediaQuery.of(context).size.width * 0.9,
-                color: Colors.deepPurple[400],
-              ),
-            ),
-            
-            Padding(
-              padding: const EdgeInsets.all(8),
-              child: Container(
-                height: 130,
-                width: MediaQuery.of(context).size.width * 0.9,
-                color: Colors.deepPurple[400],
-              ),
-            ),
-            
-            Padding(
-              padding: const EdgeInsets.all(8),
-              child: Container(
-                height: 130,
-                width: MediaQuery.of(context).size.width * 0.9,
-                color: Colors.deepPurple[400],
-              ),
-            ),
-          ],),
-        ),
-      ],),
+      ),
     );
   }
 }
