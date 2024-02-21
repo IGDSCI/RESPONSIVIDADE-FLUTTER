@@ -36,20 +36,20 @@ class _MobileStfState extends State<MobileStf> {
       backgroundColor: const Color.fromARGB(255, 153, 121, 209),
       body: Column(
         children: [
-        Padding(
-          padding: const EdgeInsets.all(8),
-          child: AspectRatio(
-            aspectRatio: 16 / 9,
-            child: Container(
-              height: 250,
-              width: MediaQuery.of(context).size.width * 0.9,
-              color: const Color.fromARGB(255, 101, 56, 179),
-            ),
-          ),
-        ),
-            
         Expanded(
           child: ListView(children: [
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: AspectRatio(
+                aspectRatio: 16 / 9,
+                child: Container(
+                  height: 250,
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  color: const Color.fromARGB(255, 101, 56, 179),
+                ),
+              ),
+            ),
+
             Padding(
               padding: const EdgeInsets.all(8),
               child: Container(
