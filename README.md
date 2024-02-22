@@ -14,8 +14,7 @@
 
 | Resolução < 600  |  Resolução < 1100 | Resolução > 1100 |
 | ---------------  |  --------------- | ---------------- |
-|  ![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/7f7cc919-d78a-4263-9bff-0663cd94d9c2) | ![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/64d016bc-81d8-48ec-91b0-198088987880)   | 
-   ![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/dc4f0cf9-7a9f-4794-99be-a938695c4bd0) |
+|  ![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/7f7cc919-d78a-4263-9bff-0663cd94d9c2) | ![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/64d016bc-81d8-48ec-91b0-198088987880)   | ![image](https://github.com/IGDSCI/RESPONSIVIDADE-FLUTTER/assets/114839208/dc4f0cf9-7a9f-4794-99be-a938695c4bd0) |
 
 | Resolução < 600  |  Resolução > 600 |
 | ---------------  |  --------------- |
