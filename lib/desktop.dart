@@ -51,8 +51,6 @@ class _DesktopStfState extends State<DesktopStf> {
                   SizedBox(height: 40),
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context)
-                          .pushReplacementNamed('/telaInicial');
                     },
                     child: MouseRegion(
                       cursor: SystemMouseCursors.click,
@@ -69,10 +67,7 @@ class _DesktopStfState extends State<DesktopStf> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         ElevatedButton(
-                            onPressed: () {
-                              Navigator.of(context)
-                                  .pushReplacementNamed('/login');
-                            },
+                            onPressed: () {},
                             child: Text(
                               'Login',
                               style: TextStyle(color: Colors.black),
