@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types
 
 import 'package:flutter/material.dart';
 
@@ -12,11 +12,13 @@ class tabletStl extends StatelessWidget {
   }
 }
 
+
 class tabletStf extends StatefulWidget {
   const tabletStf({super.key});
   @override
   State<tabletStf> createState() => _tabletStfState();
 }
+
 
 class _tabletStfState extends State<tabletStf> {
   @override
@@ -29,14 +31,13 @@ class _tabletStfState extends State<tabletStf> {
           child: Text(
             'T A B L E T',
             style: TextStyle(color: Colors.white),
-            ),
+          ),
         ),
-        ),
-      
+      ),
       drawer: Drawer(
         shape: BeveledRectangleBorder(),
         backgroundColor: Colors.white,
-        child: Column(
+        child: ListView(
           children: [
             DrawerHeader(child: Icon(Icons.favorite),),
             ListTile(
@@ -60,117 +61,139 @@ class _tabletStfState extends State<tabletStf> {
             )
           ],
         ),
-        
-        ),
+      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          Container(
-            height: MediaQuery.of(context).size.height * 0.22,
-            width: MediaQuery.of(context).size.width,
-            child: Row(
-              children: [
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,), 
-                        borderRadius: BorderRadius.all(Radius.circular(8)),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.22,
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,), 
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                    
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,), 
-                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                  
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,), 
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                    
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,), 
-                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                  
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,), 
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                    
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,), 
-                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                  
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,), 
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        ),
                       ),
                     ),
                   ),
+                ],
+              ),
+            ),
+          
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  border: Border.all(width: 1,), 
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
                 ),
-            ],),
-          ),
-        
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  border: Border.all(width: 1,), 
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                ),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  border: Border.all(width: 1,), 
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                ),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  border: Border.all(width: 1,), 
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                ),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
-            ),
-          )
-        ]),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  border: Border.all(width: 1,), 
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                ),
+              ),
+            )
+          ],
+        ),
       ),
-      );
+    );
   }
 }

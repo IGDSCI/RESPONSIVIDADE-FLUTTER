@@ -38,7 +38,7 @@ class _MobileStfState extends State<MobileStf> {
       drawer: Drawer(
         shape: BeveledRectangleBorder(),
         backgroundColor: Colors.white,
-        child: Column(
+        child: ListView(
           children: [
             DrawerHeader(child: Icon(Icons.favorite),),
             ListTile(
@@ -55,7 +55,7 @@ class _MobileStfState extends State<MobileStf> {
               leading: Icon(Icons.message),
               title: Text('M E S S A G E'),
             ),
-
+            
             ListTile(
               leading: Icon(Icons.logout),
               title: Text('L O G O U T'),
@@ -64,119 +64,123 @@ class _MobileStfState extends State<MobileStf> {
         ),
       ),
       body: SingleChildScrollView(
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          Container(
-            height: MediaQuery.of(context).size.height * 0.22,
-            width: MediaQuery.of(context).size.width,
-            child: Row(
-              children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(width: 1,), 
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.22,
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,), 
+                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
-                    
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(width: 1,),
-                      borderRadius: BorderRadius.all(Radius.circular(8))
+                  
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,),
+                          borderRadius: BorderRadius.all(Radius.circular(8))
+                        ),
+                      ),
                     ),
                   ),
-                ),
+                ],
               ),
-            ],),
-          ),
+            ),
 
-          Container(
-            height: MediaQuery.of(context).size.height * 0.22,
-            width: MediaQuery.of(context).size.width,
-            child: Row(children: [
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,),
-                        borderRadius: BorderRadius.all(Radius.circular(8))
+            Container(
+              height: MediaQuery.of(context).size.height * 0.22,
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,),
+                          borderRadius: BorderRadius.all(Radius.circular(8))
+                        ),
                       ),
                     ),
                   ),
-                ),
-                    
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,),
-                        borderRadius: BorderRadius.all(Radius.circular(8))
+                  
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          border: Border.all(width: 1,),
+                          borderRadius: BorderRadius.all(Radius.circular(8))
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+          
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+              ),
             ),
-          ),
-                  
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.16,
-              width: MediaQuery.of(context).size.width * 0.98, 
-              decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.16,
+                width: MediaQuery.of(context).size.width * 0.98, 
+                decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+              ),
             ),
-          )
-        ]),
+          ],
+        ),
       ),
     );
   }
