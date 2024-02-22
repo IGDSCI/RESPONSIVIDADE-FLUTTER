@@ -1,209 +1,210 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables, non_constant_identifier_names, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, prefer_const_constructors_in_immutables
+
 import 'package:flutter/material.dart';
 
 class DesktopStl extends StatelessWidget {
-  DesktopStl({super.key});
+  DesktopStl({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DesktopStf.DesktopStf(),
+      home: DesktopStf(),
     );
   }
 }
 
-
 class DesktopStf extends StatefulWidget {
-  DesktopStf.DesktopStf({super.key});
+  DesktopStf({Key? key}) : super(key: key);
   @override
   State<DesktopStf> createState() => _DesktopStfState();
 }
-
 
 class _DesktopStfState extends State<DesktopStf> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 65, 64, 64),
+        backgroundColor: Colors.black,
+        iconTheme: IconThemeData(color: Colors.white),
         title: Center(
           child: Text(
             'D E S K T O P',
-            style: TextStyle(
-              color: Colors.white,
+            style: TextStyle(color: Colors.white),
             ),
-          ),
         ),
       ),
-      backgroundColor: Color.fromARGB(255, 53, 52, 52),
-      body: SizedBox(
-        width: 250,
-        child: Column(
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: Row(crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: Container(
-                color: Color.fromARGB(255, 63, 62, 63),
-                child: ListView(
-                  children: [
-                    Container(
-                      height: 80,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [Colors.blue, Colors.pink],
-                        ),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 16),
-                        child: Row(
-                          children: [
-                            Text(
-                              'Olá Gustavo!',
-                              style: TextStyle(fontSize: 22, color: Colors.white),
-                            )
-                          ],
-                        ),
-                      ),
+            Container(
+              width: 300,
+              height: MediaQuery.of(context).size.height,
+              color: Colors.white,
+              child: Column(children: [
+                Padding(
+                  padding: const EdgeInsets.all(42.0),
+                  child: Icon(
+                    Icons.favorite,
+                    size: 30,
                     ),
+                ),
+                ListTile(
+                  leading: Icon(Icons.home),
+                  title: Text('D A S H B O A R D'),
+                ),
 
-                    Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.dashboard,
-                                      color: Colors.white,
-                                    ),
-                    
-                                    Text(
-                                      'Dashboard',
-                                      style: TextStyle(
-                                          fontSize: 22, color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text('S E T T I N G S'),
+                ),
+
+                ListTile(
+                  leading: Icon(Icons.message),
+                  title: Text('M E S S A G E'),
+                ),
+
+                ListTile(
+                  leading: Icon(Icons.logout),
+                  title: Text('L O G O U T'),
+                )
+              ]),
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.22,
+                      width: MediaQuery.of(context).size.width,
+                      child: Row(children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                border: Border.all(width: 1,), 
+                                borderRadius: BorderRadius.all(Radius.circular(8)),
                               ),
-                            ],
+                            ),
                           ),
                         ),
-                    
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.shopping_cart,
-                                      color: Colors.white,
-                                    ),
-                    
-                                    Text(
-                                      'Vendas',
-                                      style: TextStyle(
-                                          fontSize: 22, color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                border: Border.all(width: 1,), 
+                                borderRadius: BorderRadius.all(Radius.circular(8)),
                               ),
-                            ],
+                            ),
                           ),
                         ),
-                    
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.shopping_basket,
-                                      color: Colors.white,
-                                    ),
-                    
-                                    Text(
-                                      'Produtos',
-                                      style: TextStyle(
-                                          fontSize: 22, color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                border: Border.all(width: 1,), 
+                                borderRadius: BorderRadius.all(Radius.circular(8)),
                               ),
-                            ],
+                            ),
                           ),
                         ),
-                    
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.settings,
-                                      color: Colors.white,
-                                    ),
-                    
-                                    Text(
-                                      'Configurações',
-                                      style: TextStyle(
-                                          fontSize: 22, color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                border: Border.all(width: 1,), 
+                                borderRadius: BorderRadius.all(Radius.circular(8)),
                               ),
-                            ],
-                          ),
-                        ),
-                    
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.person,
-                                      color: Colors.white,
-                                    ),
-                    
-                                    Text(
-                                      'Perfil',
-                                      style: TextStyle(
-                                          fontSize: 22, color: Colors.white
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
                         ),
                       ],
+                      ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.16,
+                        width: MediaQuery.of(context).size.width * 0.98, 
+                        decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+                      ),
+                    ),
+                            
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.16,
+                        width: MediaQuery.of(context).size.width * 0.98, 
+                        decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+                      ),
+                    ),
+                            
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.16,
+                        width: MediaQuery.of(context).size.width * 0.98, 
+                        decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+                      ),
+                    ),
+                            
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.16,
+                        width: MediaQuery.of(context).size.width * 0.98, 
+                        decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+                      ),
+                    ),
+                  
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.16,
+                        width: MediaQuery.of(context).size.width * 0.98, 
+                        decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+                      ),
+                    )
                   ],
                 ),
               ),
             ),
+
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Column(children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.6,
+                    width: MediaQuery.of(context).size.width * 0.30,
+                    decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+                    ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.47,
+                    width: MediaQuery.of(context).size.width * 0.30,
+                    decoration: BoxDecoration(color: Colors.black,border: Border.all(width: 1,), borderRadius: BorderRadius.all(Radius.circular(8))),
+                    ),
+                )
+              ],),
+            )
           ],
         ),
       ),

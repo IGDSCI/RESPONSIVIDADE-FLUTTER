@@ -1,40 +1,38 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
-class MobileStl extends StatelessWidget {
-  MobileStl({super.key});
+class tabletStl extends StatelessWidget {
+  const tabletStl({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MobileStf(),
+      home: tabletStf(),
     );
   }
 }
 
-
-class MobileStf extends StatefulWidget {
-  MobileStf({super.key});
+class tabletStf extends StatefulWidget {
+  const tabletStf({super.key});
   @override
-  State<MobileStf> createState() => _MobileStfState();
+  State<tabletStf> createState() => _tabletStfState();
 }
 
-
-class _MobileStfState extends State<MobileStf> {
+class _tabletStfState extends State<tabletStf> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.black, 
         iconTheme: IconThemeData(color: Colors.white),
         title: Center(
           child: Text(
-            'M O B I L E',
+            'T A B L E T',
             style: TextStyle(color: Colors.white),
-          ),
+            ),
         ),
-      ),
+        ),
+      
       drawer: Drawer(
         shape: BeveledRectangleBorder(),
         backgroundColor: Colors.white,
@@ -62,7 +60,9 @@ class _MobileStfState extends State<MobileStf> {
             )
           ],
         ),
-      ),
+        
+        ),
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -72,64 +72,57 @@ class _MobileStfState extends State<MobileStf> {
             child: Row(
               children: [
               Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(width: 1,), 
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        border: Border.all(width: 1,), 
+                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                      ),
                     ),
                   ),
                 ),
-              ),
                     
               Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(width: 1,),
-                      borderRadius: BorderRadius.all(Radius.circular(8))
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        border: Border.all(width: 1,), 
+                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                      ),
                     ),
                   ),
                 ),
-              ),
+                    
+              Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        border: Border.all(width: 1,), 
+                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                      ),
+                    ),
+                  ),
+                ),
+                    
+              Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        border: Border.all(width: 1,), 
+                        borderRadius: BorderRadius.all(Radius.circular(8)),
+                      ),
+                    ),
+                  ),
+                ),
             ],),
-          ),
-
-          Container(
-            height: MediaQuery.of(context).size.height * 0.22,
-            width: MediaQuery.of(context).size.width,
-            child: Row(children: [
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,),
-                        borderRadius: BorderRadius.all(Radius.circular(8))
-                      ),
-                    ),
-                  ),
-                ),
-                    
-              Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        border: Border.all(width: 1,),
-                        borderRadius: BorderRadius.all(Radius.circular(8))
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
           ),
         
           Padding(
@@ -178,6 +171,6 @@ class _MobileStfState extends State<MobileStf> {
           )
         ]),
       ),
-    );
+      );
   }
 }
