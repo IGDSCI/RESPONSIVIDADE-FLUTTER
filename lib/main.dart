@@ -6,4 +6,3 @@ import 'package:responsividade/layout_responsivo.dart';
 void main() {
   runApp(LayoutResponsivoStl());
 }
-

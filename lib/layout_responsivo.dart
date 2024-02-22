@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsividade/mobile.dart';
 import 'package:responsividade/desktop.dart';
-import 'package:responsividade/tablet.dart';
 
 
 class LayoutResponsivoStl extends StatelessWidget {
@@ -25,10 +24,7 @@ class LayoutResponsivoStf extends StatelessWidget {
       builder: (context, constraints){
         if(constraints.maxWidth < 600){
           return MobileStl();
-        } if(constraints.maxWidth < 1100){
-          return tabletStl();
-        }
-        else{
+        } else{
           return DesktopStl();
         }
       },
